@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student feedback form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="head">Course feedback form</h1>
+    <p class="para">Artificial intelligence and Machine learning course</p>
+    <p class="required">* Required</p>
+
+    <form>
+    <fieldset>
+        <legend class="details">
+            Your Details:
+        </legend>
+        
+        <div class="container">
+            <span >FirstName</span>
+        <input class="input" type="text" name="namu"  placeholder="Firstname" required>
+    </div>
+    <div class="container">
+        <span> LastName</span>
+        <input class="input"type="text" name="eswar" minlength="1" placeholder="Lastname" required >
+    </div>
+    <div class="container">
+        <span >Email</span>
+        <input class="input"  type="Email" placeholder="@gmail.com" required>
+    </div>
+    <div class="container">
+        <span>Phone no</span>
+        <input class="input" type="number" name="phonenumber"  placeholder="Phone no" required>
+    </div>
+    <div class="container">
+        <span >Department</span>
+        <input class="input" type="text" name="ece" minlength="3" placeholder="Department" required>
+    </div>
+    <div class="container">
+        <span> Course title</span>
+        <select  name="refer" id="title" required>
+        <option value=" "></option>
+        <option value="AI">Artificial intelligenceand Machine learning</option>
+        <option value="Cloud">Cloud computing</option>
+        <option value="DS">Data science</option>
+        <option value="VLSI">VLSI SoS</option>
+        <option value="IoT">Internet of Things</option>
+        </select>
+    </div>
+</fieldset>
+<br>
+
+<br>
+        <fieldset>
+            <legend class="Details-1">
+                Your reviews:
+            </legend>
+        
+        <div class="QA">
+        <p>1. The course contents met with your expectations?</p>
+        <input type="radio" id="html" name="feedback" value="Agree">Agree
+        <input type="radio"  id="html" name="feedback" value="Disagree" >Disagree
+        <input type="radio" id="html"  name="feedback" value="Strongly agree">Strongly agree
+        <input type="radio"  id="html" name="feedback" value="Strongly disagree" >Strongly disagree
+    </div>
+    <div class="QA">
+         <p>2. The lecture sequence was well planed?</p>
+        <input type="radio" id="html" name="lecture" value="Agree" >Agree
+        <input type="radio" id="html" name="lecture" value="Disagree" >Disagree
+        <input type="radio" id="html" name="lecture" value="Strongly agree">Strongly agree
+        <input type="radio" id="html"name="lecture"value="Strongly disagree" >Strongly disagree
+    </div>
+    <div class="QA">
+        <p>3. The course exposed you to new knowledge and practices?</p>
+        <input type="radio" id="html" name="course" value="Agree" >Agree
+        <input type="radio"  id="html" name="course" value="Disagree">Disagree
+        <input type="radio" id="html" name="course" value="Strongly agree" >Strongly agree
+        <input type="radio" id="html"  name="course" value="Strongly disagree" >Strongly disagree
+    </div>
+    
+    <div class="QA">
+        <p>4. The level of course was?</p>
+        <input type="radio" id="html" name="level" value="Low" >Low
+        <input type="radio" id="html" name="level" value="High" >High
+        <input type="radio" id="html" name="level" value="Too low" >Too Low
+        <input type="radio" id="html" name="level" value="Too high">Too High
+    </div>
+</fieldset>
+    <br>
+    <br>
+    <a href="login.html"></a>
+<input type="submit" value="submit">
+<br>
+<br>
+<input type="submit" value="  clear   ">
+</form>
+</body>
+</html>
